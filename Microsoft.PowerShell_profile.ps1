@@ -19,3 +19,7 @@ if ($width -ge 54 -and $height -ge 15) {
     Set-PSReadLineOption -PredictionViewStyle InlineView
 }
 Set-PSReadLineOption -EditMode Windows
+
+# Fuzzy Finder
+Import-Module PSFzf
+Set-PsFzfOption -PSReadLineChordProvider 'Ctrl+f' -PSReadLineChordReverseHistory 'Ctrl+r'
